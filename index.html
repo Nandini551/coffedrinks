@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset=UTF-8>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Coffeshop</title>
+</head>
+<body>
+	<script type="text/javascript">
+	let shop=
+	{
+		style:[
+			  {
+			  	info:"Brew:Ground coffee is added to a brew basket and placed in an automatic coffee machine for this brewing style. Gravity is used to pass water through the grounds, resulting in a traditional cup of coffee."
+			  },
+			  {
+			  	info:"Pour Over: This brewing style is achieved by pouring boiling water slowly through coffee grounds as they sit in a filter basket. The coffee then drips into a single cup, resulting in a strong brew."
+			  },
+			  {
+			  	info:"Cold Brew:For this method, coarsely ground coffee is placed in room temperature water and allowed to steep for an extended period of time. This results in a less bitter brew while still remaining high in caffeine."
+			  },
+			  {
+			  	info:"Espresso: To achieve an espresso brew, pressurized hot water is passed through a filter containing finely ground dark roasted beans using a cappuccino or espresso machine. The force of the water produces a highly concentrated coffee shot. This is the method most commonly used for the base of coffee drinks."
+			  },
+			  {
+			  	info:"Ristretto: Brewed in a similar method to the espresso, pressurized water is passed through the coffee grounds. However, you would use half the amount of water. The shorter brewing cycle creates a more concentrated and darker shot of espresso."
+
+			  }
+			  ],
+		drinks:[
+				{
+					image:'espresso.jpg',
+					name:"1.Espresso",
+			   		about:"The espresso, also known as a short black, is approximately one ounce of highly concentrated coffee. Although simple in appearance, it can be difficult to master.",
+			   		lists:['Ratio: 1 shot of espresso','Cup: 2-4 oz. Espresso Cup']
+				},
+				{
+					image:'double.jpg',
+					name:"2.Double Espresso",
+					about:"A double espresso may also be listed as doppio, which is the Italian word for double. This drink is highly concentrated and strong.",
+					lists:['Ratio: 2 shots of espresso','Cup: 3-4 oz. Demitasse Cup']
+
+				},
+				{
+					image:'redeye.jpg',
+					name:"3.Red Eye",
+					about:"The red eye's purpose is to add a boost of caffeine to your standard cup of coffee.",
+					lists:['Ratio: 1 shot of espresso + 6 oz. of drip brewed coffee','Cup:  8 oz. Coffee Mug']
+	
+				},
+				{
+					image:'blackeye.jpg',
+					name:"4.Black Eye",
+					about:"The black eye is just the doubled version of the red eye and is very high in caffeine.",
+					lists:['Ratio:2 shots of espresso + 6 oz. of drip brewed coffee','Cup:8-10 oz. Coffee Mug']
+	
+				},
+				{
+					image:'americano.jpg',
+					name:"5.Americano",
+					about:"Americanos are popular breakfast drinks and thought to have originated during World War II. Soldiers would add water to their coffee to extend their rations farther. The water dilutes the espresso while still maintaining a high level of caffeine.",
+					lists:['Ratio: 1 shot of espresso + 3 oz. of hot water','Cup:5-6 oz. Glass Coffee Mug']
+	
+				},
+				{
+					image:'longblack.jpg',
+					name:"6.Long Black",
+					about:"The long black is a similar coffee drink to the americano, but it originated in New Zealand and Australia. It generally has more crema than an americano.",
+					lists:['Ratio: 2 shots of espresso + 3 oz. of hot water','Cup:6-8 oz. Glass Coffee Mug ']
+	
+				},
+				{
+					image:'macchiato.jpg',
+					name:"7.Macchiato",
+					about:"The word “macchiato” means mark or stain. This is in reference to the mark that steamed milk leaves on the surface of the espresso as it is dashed into the drink. Flavoring syrups are often added to the drink according to customer preference.",
+					lists:['Ratio: 1 shot of espresso + 1 to 2 teaspoons of steamed milk','Cup: 3 oz. Glass Espresso Cup']
+	
+				},
+				{
+					image:'longmacci.jpg',
+					name:"8.Long Macchiato",
+					about:"Often confused with a standard macchiato, the long macchiato is a taller version and will usually be identifiable by its distinct layers of coffee and steamed milk.",
+					lists:['Ratio: 2 shots of espresso + 2 to 4 teaspoons of steamed milk','Cup:5 oz. Rocks Glass']
+	
+				},
+				{
+					image:'cortado.jpg',
+					name:"9.Cortado",
+					about:"The cortado takes the macchiato one step further by evenly balancing the espresso with warm milk in order to reduce the acidity.",
+					lists:['Ratio: 1 shot of espresso + 1 ounce of warm milk + 1 cm of foam','Cup: 5 oz. Rocks Glass']
+	
+				},
+				{
+					image:'brave.jpg',
+					name:"10.Breve",
+					about:"The breve provides a decadent twist on the average espresso adding steamed half-and-half to create a rich and creamy texture.",
+					lists:['Ratio:  1 shot of espresso + 3 oz. of steamed half-and-half + 1 cm of foam','Cup: 5-7 oz. Low Cup']
+	
+				},
+				{
+					image:'cappucino.jpg',
+					name:"11.Cappuccino",
+					about:"This creamy coffee drink is usually consumed at breakfast time in Italy and is loved in the United States as well. It is usually associated with indulgence and comfort due to its thick foam layer and additional flavorings that can be added to it.",
+					lists:['Ratio: 1-2 shots of espresso + 2 oz. of steamed milk + 2 oz. of foamed milk + sprinkling of chocolate powder (optional)','Cup: 6-8 oz. Cappuccino Mug']
+	
+				},
+				{
+					image:'flatwhite.jpg',
+					name:"12.Flat White",
+					about:"A flat white also originates from New Zealand and Australia and is very similar to a cappuccino but lacks the foam layer and chocolate powder. To keep the drink creamy rather than frothy, steamed milk from the bottom of the jug is used instead of from the top.",
+					lists:['Ratio: 1 shot of espresso + 4 oz. of steamed milk ','Cup:6 oz. Glass Tumbler']
+	
+				},
+				{
+					image:'cafelatte.jpg',
+					name:"13.Cafe Latte",
+					about:"Cafe lattes are considered to be an introductory coffee drink since the acidity and bitterness of coffee is cut by the amount of milk in the beverage. Flavoring syrups are often added to the latte for those who enjoy sweeter drinks.",
+					lists:['Ratio:1 shot of espresso + 8-10 oz. of steamed milk + 1 cm of foam','Cup: 14 oz. Mixing Glass']
+	
+				},
+				{
+					image:'mocha.jpg',
+					name:"14.Mocha",
+					about:"The mocha is considered to be like a coffee and hot chocolate hybrid. The chocolate powder or syrup gives it a rich and creamy flavor and cuts the acidity of the espresso.",
+					lists:['Ratio: 1 shot of espresso + 1-2 oz. of chocolate syrup/powder + 1-3 oz. of steamed milk + 2-3 cm of foam or whipped cream','Cup: 6-8 oz Irish Coffee Mug ']
+	
+				},
+				{
+					image:'vienna.jpg',
+					name:"15.Vienna",
+					about:"There are a few variations on the vienna, but one of the most common is made with two ingredients: espresso and whipped cream. The whipped cream takes the place of milk and sugar to provide a creamy texture.",
+					lists:['Ratio: 1-2 shots of espresso + 2 oz. of whipped cream ','Cup:4-5 oz. Espresso Mug']
+	
+				},
+				{
+					image:'affogato.jpg',
+					name:"16.Affogato",
+					about:"Affogatos are more for a dessert coffee than a drink you would find at a cafe, but they can add a fun twist to your menu. They are made by pouring a shot of espresso over a scoop of vanilla ice cream to create a sweet after-meal treat.",
+					lists:['Ratio: 1-2 shots of espresso + 1 scoop of vanilla ice cream','Cup: 5-7 oz. Dessert Dish']
+	
+				},
+				{
+					image:'cafe-au-lait.jpg',
+					name:"17.Cafe au Lait",
+					about:"The cafe au lait is typically made with french press coffee instead of an espresso shot to bring out the different flavors in the coffee. It is then paired with scalded milk instead of steamed milk and poured at a 50/50 ratio.",
+					lists:['Ratio:5 oz. french press coffee + 5 oz. scalded milk','Cup:12 oz. Coffee Mug']
+	
+				},
+				{
+					image:'iced.jpg',
+					name:"18.Iced Coffee",
+					aboutt:"Iced coffees become very popular in the summer time in the United States. The recipes do have some variance, with some locations choosing to interchange milk with water in the recipe. Often, different flavoring syrups will be added per the preference of the customer.",
+					lists:['Ratio:2 oz. drip coffee or espresso + 4 oz. of ice + 4-6 oz of milk or water + flavoring syrup to taste','Cup:14 oz. Mixing Glass']
+	
+				}
+
+			   ],
+	}
+	let std= shop['style'];
+
+    var body= document.body;
+    var header=document.createElement("header");
+    header.textContent="Different Types of Coffee Drinks";
+    body.appendChild(header);
+
+
+
+    var card=document.createElement("div");
+    card.classList.add("card");
+    body.append(card);
+
+
+    for(var i=0; i< std.length; i++)
+    {
+    	var details=document.createElement("div");
+    	details.classList.add("details");
+    	card.append(details);
+
+    	var title=document.createElement("p");
+    	var content=document.createTextNode(std[i].info);
+    	title.append(content);
+    	details.append(title);
+
+    }
+    let drk = shop['drinks'];
+
+    var body=document.body;
+    var header=document.createElement("header");
+    header.textContent="The 18 Coffee Drinks";
+    body.appendChild(header);
+
+
+    var card=document.createElement("div");
+    card.classList.add("card");
+    body.append(card);
+
+
+    for(var i=0; i< drk.length ; i++)
+    {
+    	 var item = document.createElement("div");
+         item.classList.add("item");
+         card.append(item);
+
+         var seperate=document.createElement("div");
+    	seperate.classList.add("seperate");
+    	item.append(seperate);
+
+
+    	var img = document.createElement("img");
+    	img.classList.add("picture");
+         img.setAttribute("src",drk[i].image);
+         img.setAttribute("alt",drk[i].altenate);
+        seperate.append(img);
+
+    	
+
+    	var title=document.createElement("p");
+    	var content=document.createTextNode(drk[i].name);
+    	title.append(content);
+    	seperate.append(title);
+
+
+    	var about=document.createElement("p");
+    	var content=document.createTextNode(drk[i].about);
+    	about.append(content);
+    	seperate.append(about);
+
+    	var lists=document.createElement("ul");
+    	seperate.append(lists);
+
+    	drk[i].lists.forEach(function(answer)
+    		{
+    			var li=document.createElement("li");
+    			li.innerHTML += answer;
+    			lists.appendChild(li);
+    		});
+
+
+    	 var button = document.createElement("button");
+    	 button.classList.add("button");
+        button.innerHTML = "BUY NOW";
+       seperate.append(button);
+
+
+
+
+
+    }
+
+   
+
+
+   </script>
+
+</body>
+</html>
